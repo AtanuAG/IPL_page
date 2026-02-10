@@ -1,0 +1,49 @@
+.player {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.player-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/*team*/
+.team {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/*Moving text*/
+.moving-text {
+  width: 100%;   
+  overflow: hidden;
+}
+
+.moving-text h1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveRight 20s linear infinite;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

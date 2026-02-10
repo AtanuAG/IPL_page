@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+}
+
+/* Header */
+header {
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #2a5298;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #1e3c72;
+    margin-bottom: 30px;
+}
+
+/* Match Card */
+.match-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.team h3 {
+    color: #2a5298;
+}
+
+.vs p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.vs span {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Match Details */
+.details {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+/* Match Cards */
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #2a5298;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/*logo */
+
+.team-card:hover {
+    background-color: #2a5298;
+    color: white;
+}
+
+.ipl-teams {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ipl-teams h2 {
+    color: #1e3c72;
+    margin-bottom: 30px;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.team-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.team-box:hover {
+    transform: scale(1.08);
+}
+
+.team-box img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.team-box p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* PointsTable */
+.points-table {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.points-table h2 {
+    color: #1e3c72;
+    margin-bottom: 25px;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+thead {
+    background-color: #1e3c72;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ffe0b2;
+    cursor: pointer;
+}
+
+/* Status */
+
+.ipl-stats {
+    padding: 40px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.ipl-stats h2 {
+    color: #1e3c72;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cards */
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+}
+
+.stat-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e3c72;
+}
+
+/* Status Highlight */
+.status .value {
+    font-size: 22px;
+}
+
+.live {
+    color: #2e7d32;
+}
+
+.completed {
+    color: #1565c0;
+}
+
+.upcoming {
+    color: #f57c00;
+}
+
+.player-cell {
+    height: 20px;
+    width: 18px;
+}
+
+
+/*Players logo*/
+.player-cell img {
+    width: 10px;
+    height: 20px;
+    vertical-align: middle;
+    object-fit: cover;
+    margin-right: 6px;
+    border-radius: 50;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
