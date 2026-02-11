@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPL Completed Matches</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            margin:0;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            color:#1a237e;
+            margin-bottom:20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        table{
+            width:90%;
+            max-width:900px;
+            margin:auto;
+            border-collapse:collapse;
+            background:#fff;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        th, td{
+            border:1px solid #ccc;
+            padding:12px;
+            text-align:center;
+        }
+
+        th{
+            background:#ff9800;
+            color:white;
+            letter-spacing:1px;
+        }
+
+        tr{
+            transition: all 0.3s ease;
+        }
+
+        tr:hover{
+            background:#f1f1f1;
+            transform: scale(1.01);
+            cursor:pointer;
+        }
+
+        .win{
+            color:green;
+            font-weight:bold;
+        }
+
+        /* Winner highlight */
+        .winner-row{
+            background:#e8f5e9;
+        }
+
+        /* Responsive table */
+        @media (max-width:600px){
+            table{
+                font-size:14px;
+            }
+            th, td{
+                padding:8px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform: translateY(-10px);
+            }
+            to{
+                opacity:1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Completed Matches</h2>
+
+<table>
+    <tr>
+        <th>Match No</th>
+        <th>Team 1</th>
+        <th>Team 2</th>
+        <th>Winner</th>
+        <th>Result</th>
+    </tr>
+
+    <tr class="winner-row">
+        <td>1</td>
+        <td>RCB</td>
+        <td>SRH</td>
+        <td class="win">RCB</td>
+        <td>RCB won by 6 wickets</td>
+    </tr>
+
+    <tr class="winner-row">
+        <td>2</td>
+        <td>MI</td>
+        <td>CSK</td>
+        <td class="win">MI</td>
+        <td>MI won by 54 runs</td>
+    </tr>
+
+    <tr class="winner-row">
+        <td>3</td>
+        <td>KKR</td>
+        <td>DC</td>
+        <td class="win">KKR</td>
+        <td>KKR won by 5 wickets</td>
+    </tr>
+
+     <tr class="winner-row">
+        <td>4</td>
+        <td>PBKS</td>
+        <td>CSK</td>
+        <td class="win">PBKS</td>
+        <td>PBKS won by 24 runs</td>
+    </tr>
+
+    <tr class="winner-row">
+        <td>5</td>
+        <td>GT</td>
+        <td>RR</td>
+        <td class="win">RR</td>
+        <td>RR won by 5 wickets</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
